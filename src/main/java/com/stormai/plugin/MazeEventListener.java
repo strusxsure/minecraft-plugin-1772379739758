@@ -61,7 +61,7 @@ public class MazeEventListener implements Listener {
         // Trigger lava trap
         Location loc = block.getLocation().add(0, -1, 0);
         loc.getBlock().setType(Material.LAVA);
-        player.sendMessage(ChatColor.RED + "A lava trap was triggered beneath you!");
+        player.sendMessage(org.bukkit.ChatColor.RED + "A lava trap was triggered beneath you!");
 
         // Spawn fire mob
         loc.getWorld().spawnEntity(loc.add(0, 1, 0), EntityType.BLAZE);
