@@ -1,0 +1,8 @@
+name: FireMazePlugin
+version: 1.0
+main: com.stormai.plugin.FireMazePlugin
+api-version: 1.21
+commands:
+  firemaze:
+    description: Fire Maze main command
+    usage: /firemaze <start|help>
