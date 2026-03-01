@@ -42,7 +42,8 @@ public class MazeEventListener implements Listener {
                 if (timer % 60 == 0) { // Every 3 seconds (20 ticks * 60)
                     player.damage(plugin.getConfigManager().getHeatDamageRate());
                     player.setFireTicks(60);
-                    player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 60, 1));
+                    // Use NAUSEA instead of CONFUSION if CONFUSION is unavailable
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.NAUSEA, 60, 1));
                 }
             }
         }.runTaskTimer(plugin, 0, 20);
